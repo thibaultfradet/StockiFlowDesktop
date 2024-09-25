@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\t.fradet\\Desktop\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop.csproj": {}
+    "D:\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\t.fradet\\Desktop\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop.csproj": {
+    "D:\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\t.fradet\\Desktop\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop.csproj",
+        "projectUniqueName": "D:\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop.csproj",
         "projectName": "StockiFlowDesktop",
-        "projectPath": "C:\\Users\\t.fradet\\Desktop\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop.csproj",
+        "projectPath": "D:\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop.csproj",
         "packagesPath": "C:\\Users\\t.fradet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\t.fradet\\Desktop\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\obj\\",
+        "outputPath": "D:\\StockiFlowDesktop\\StockiFlowDesktop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -50,6 +50,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

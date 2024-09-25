@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\t.fradet\\Desktop\\StockiFlowDesktop\\StockiFlowDesktop\\",
+  "WorkspaceRootPath": "D:\\StockiFlowDesktop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|c:\\users\\t.fradet\\desktop\\stockiflowdesktop\\stockiflowdesktop\\stockiflowdesktop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|solutionrelative:stockiflowdesktop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|d:\\stockiflowdesktop\\stockiflowdesktop\\classes\\livre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|solutionrelative:stockiflowdesktop\\classes\\livre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|d:\\stockiflowdesktop\\stockiflowdesktop\\f_acceuil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|solutionrelative:stockiflowdesktop\\f_acceuil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|D:\\StockiFlowDesktop\\stockiflowdesktop\\f_acceuil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|solutionrelative:stockiflowdesktop\\f_acceuil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Conception]",
-              "DocumentMoniker": "C:\\Users\\t.fradet\\Desktop\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\Form1.cs",
-              "RelativeDocumentMoniker": "StockiFlowDesktop\\Form1.cs",
-              "ToolTip": "C:\\Users\\t.fradet\\Desktop\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\Form1.cs [Conception]",
-              "RelativeToolTip": "StockiFlowDesktop\\Form1.cs [Conception]",
+              "Title": "Livre.cs",
+              "DocumentMoniker": "D:\\StockiFlowDesktop\\StockiFlowDesktop\\Classes\\Livre.cs",
+              "RelativeDocumentMoniker": "StockiFlowDesktop\\Classes\\Livre.cs",
+              "ToolTip": "D:\\StockiFlowDesktop\\StockiFlowDesktop\\Classes\\Livre.cs",
+              "RelativeToolTip": "StockiFlowDesktop\\Classes\\Livre.cs",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T11:53:12.806Z",
-              "EditorCaption": " [Conception]"
+              "WhenOpened": "2024-09-25T11:24:09.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "F_Acceuil.cs",
+              "DocumentMoniker": "D:\\StockiFlowDesktop\\StockiFlowDesktop\\F_Acceuil.cs",
+              "RelativeDocumentMoniker": "StockiFlowDesktop\\F_Acceuil.cs",
+              "ToolTip": "D:\\StockiFlowDesktop\\StockiFlowDesktop\\F_Acceuil.cs",
+              "RelativeToolTip": "StockiFlowDesktop\\F_Acceuil.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAuwIMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T12:28:15.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "F_Acceuil.cs [Design]",
+              "DocumentMoniker": "D:\\StockiFlowDesktop\\StockiFlowDesktop\\F_Acceuil.cs",
+              "RelativeDocumentMoniker": "StockiFlowDesktop\\F_Acceuil.cs",
+              "ToolTip": "D:\\StockiFlowDesktop\\StockiFlowDesktop\\F_Acceuil.cs [Design]",
+              "RelativeToolTip": "StockiFlowDesktop\\F_Acceuil.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T12:00:45.611Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
