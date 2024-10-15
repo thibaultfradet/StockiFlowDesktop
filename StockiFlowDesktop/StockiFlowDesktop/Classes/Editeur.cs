@@ -58,7 +58,7 @@ namespace StockiFlowDesktop.Classes
                 try
                 {
                     reader.Read();
-                    this.SetIdEditeur(int.Parse(reader["MAX(id_editeur)"].ToString()) + 1);
+                    this.SetIdEditeur(int.Parse(reader["MAX(idEditeur)"].ToString()) + 1);
                 }
                 catch (Exception) {  }
             }

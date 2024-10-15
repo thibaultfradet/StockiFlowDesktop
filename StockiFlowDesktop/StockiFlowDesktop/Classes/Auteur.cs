@@ -53,7 +53,7 @@ namespace StockiFlowDesktop.Classes
                 try
                 {
                     reader.Read();
-                    this.SetIdAuteur(int.Parse(reader["MAX(id_auteur)"].ToString()) + 1);
+                    this.SetIdAuteur(int.Parse(reader["MAX(idAuteur)"].ToString()) + 1);
                 }
                 catch (Exception) {  }
             }
@@ -63,7 +63,7 @@ namespace StockiFlowDesktop.Classes
 
 
 
-            string req_create = "insert into Auteur('" + this.GetIdAuteur() + "','" + this.GetNomAuteur() + "','" + this.GetPrenomAuteur() + "');";
+            string req_create = "insert into Auteur values('" + this.GetIdAuteur() + "','" + this.GetNomAuteur() + "','" + this.GetPrenomAuteur() + "');";
             Global.conn.Open();
             MySqlCommand stmt_create = new MySqlCommand(req_create, Global.conn);
 

@@ -60,3 +60,114 @@ D:\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\refint\StockiFlo
 D:\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.pdb
 D:\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.genruntimeconfig.cache
 D:\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\ref\StockiFlowDesktop.dll
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.csproj.AssemblyReference.cache
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.Form1.resources
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.F_Acceuil.resources
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.PageAjout.F_AjoutAuteur.resources
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.PageAjout.F_AjoutEditeur.resources
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.PageAjout.F_AjoutGenre.resources
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.PageAjout.F_AjoutLivre.resources
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.PageAjout.F_AjoutTypeLivre.resources
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.csproj.GenerateResource.cache
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.AssemblyInfoInputs.cache
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.AssemblyInfo.cs
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.csproj.CoreCompileInputs.cache
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.sourcelink.json
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.dll
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\refint\StockiFlowDesktop.dll
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.pdb
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.exe
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.deps.json
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.runtimeconfig.json
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.dll
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.pdb
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFl.3A97DC61.Up2Date
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.genruntimeconfig.cache
+C:\Users\t.fradet\Documents\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\ref\StockiFlowDesktop.dll
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.csproj.AssemblyReference.cache
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.Form1.resources
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.F_Acceuil.resources
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.PageAjout.F_AjoutAuteur.resources
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.PageAjout.F_AjoutEditeur.resources
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.PageAjout.F_AjoutGenre.resources
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.PageAjout.F_AjoutLivre.resources
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.PageAjout.F_AjoutTypeLivre.resources
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.csproj.GenerateResource.cache
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.GeneratedMSBuildEditorConfig.editorconfig
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.AssemblyInfoInputs.cache
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.AssemblyInfo.cs
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.csproj.CoreCompileInputs.cache
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.sourcelink.json
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.dll
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\refint\StockiFlowDesktop.dll
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.pdb
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.exe
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.deps.json
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.runtimeconfig.json
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.dll
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.pdb
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\Google.Protobuf.dll
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\MySql.Data.dll
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\ZstdSharp.dll
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFl.3A97DC61.Up2Date
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.genruntimeconfig.cache
+E:\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\ref\StockiFlowDesktop.dll
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.exe
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.deps.json
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.runtimeconfig.json
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.dll
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.pdb
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\Google.Protobuf.dll
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\MySql.Data.dll
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\ZstdSharp.dll
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.csproj.AssemblyReference.cache
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.F_Acceuil.resources
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.PageAjout.F_AjoutAuteur.resources
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.PageAjout.F_AjoutLivre.resources
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.csproj.GenerateResource.cache
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.GeneratedMSBuildEditorConfig.editorconfig
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.AssemblyInfoInputs.cache
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.AssemblyInfo.cs
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.csproj.CoreCompileInputs.cache
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.sourcelink.json
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFl.3A97DC61.Up2Date
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.dll
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\refint\StockiFlowDesktop.dll
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.pdb
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.genruntimeconfig.cache
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\ref\StockiFlowDesktop.dll
+D:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.PageAjout.F_AjoutMulti.resources

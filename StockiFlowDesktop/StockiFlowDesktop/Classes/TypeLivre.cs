@@ -69,7 +69,7 @@ namespace StockiFlowDesktop.Classes
         {
             string req_retrieve = "select idTypeLivre,libelle  from TypeLivre where idTypeLivre = " + _id;
             MySqlCommand stmt_retrieve = new MySqlCommand(req_retrieve, Global.conn);
-            Global.conn.Close();
+            Global.conn.Open();
 
             using (MySqlDataReader reader = stmt_retrieve.ExecuteReader())
             {

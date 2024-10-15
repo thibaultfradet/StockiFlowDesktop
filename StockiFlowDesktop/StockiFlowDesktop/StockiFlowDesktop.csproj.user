@@ -4,5 +4,14 @@
     <Compile Update="F_Acceuil.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="PageAjout\F_AjoutAuteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PageAjout\F_AjoutLivre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PageAjout\F_AjoutMulti.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

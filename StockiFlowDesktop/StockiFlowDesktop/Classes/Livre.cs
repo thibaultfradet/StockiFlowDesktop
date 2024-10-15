@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using MySql.Data.MySqlClient;
 
 namespace StockiFlowDesktop.Classes
@@ -15,7 +16,6 @@ namespace StockiFlowDesktop.Classes
         private string commentaire;
         private string synopsys;
         private DateTime DateSortie;
-        private Etat etatLivre;
         private TypeLivre leType;
         private List<Auteur> lesAuteurs;
         private List<Genre> lesGenres;
@@ -25,7 +25,7 @@ namespace StockiFlowDesktop.Classes
 
         public Livre() { }
 
-        public Livre(string _ISBN, string _titre, int _nombrePages, float _poids, float _prixInitial, float _hauteur, float _largeur, string _commentaire, string _synopsys, DateTime _dateSortie, Etat _etatLivre, TypeLivre _LeType, List<Auteur> _listeAuteur, List<Genre> _ListeGenre , List<Editeur> _listeEditeur)
+        public Livre(string _ISBN, string _titre, int _nombrePages, float _poids, float _prixInitial, float _hauteur, float _largeur, string _commentaire, string _synopsys, DateTime _dateSortie, TypeLivre _LeType, List<Auteur> _listeAuteur, List<Genre> _ListeGenre , List<Editeur> _listeEditeur)
         {
             this.ISBN = _ISBN;
             this.titre = _titre;
@@ -37,7 +37,6 @@ namespace StockiFlowDesktop.Classes
             this.commentaire = _commentaire;
             this.synopsys = _synopsys;
             this.DateSortie = _dateSortie;
-            this.etatLivre = _etatLivre;
             this.leType = _LeType;
             this.lesAuteurs = _listeAuteur;
             this.lesGenres = _ListeGenre;
@@ -56,7 +55,6 @@ namespace StockiFlowDesktop.Classes
         public string GetCommentaire() { return this.commentaire; }
         public string GetSynopsys() { return this.synopsys; }
         public DateTime GetDateSortie() { return this.DateSortie; }
-        public Etat GetEtat() { return this.etatLivre; }
         public TypeLivre GetLeType() {return this.leType;}
         public List<Auteur> GetLesAuteurs() { return this.lesAuteurs; }
         public List<Genre> GetLesGenres() { return this.lesGenres; }
@@ -74,7 +72,6 @@ namespace StockiFlowDesktop.Classes
         public void SetCommentaire(string _commentaire) { this.commentaire = _commentaire; }
         public void SetSynopsys(string _synopsys) { this.synopsys = _synopsys; }
         public void SetDateSortie(DateTime _datesortie) { this.DateSortie = _datesortie; }
-        public void SetEtat(Etat _etatLivre) { this.etatLivre = _etatLivre; }
         public void SetLeType(TypeLivre _type) { this.leType = _type; }
         public void SetLesAuteurs(List<Auteur> _listeAuteurs) { this.lesAuteurs = _listeAuteurs; }
         public void SetLesGenres(List<Genre> _listeGenres) { this.lesGenres = _listeGenres; }
@@ -88,7 +85,28 @@ namespace StockiFlowDesktop.Classes
         public void CreateLivre()
         {
 
-            string req_create = "insert into livre values('" + this.GetISBN() + "','" + this.GetTitre() + "','" + this.GetNombrePages() + "','" + this.GetPoids().ToString().Replace(',', '.') + "','" + this.GetPrixInitial().ToString().Replace(',', '.') + "','" + this.GetHauteur().ToString().Replace(',', '.') + "','" + this.GetLargeur().ToString().Replace(',', '.') + "','" + this.GetCommentaire() + "','" + this.GetSynopsys() + "','" + this.GetDateSortie().ToString() + "','" + this.GetEtat().GetIdEtat() + "','" + this.GetLeType().GetIdTypeLivre() + "')";
+            List<Auteur> lesAuteurs = this.GetLesAuteurs();
+            List<Genre> lesGenres = this.GetLesGenres();
+            List<Editeur> lesEditeurs = this.GetLesEditeurs();
+
+
+            string req_create = "insert into livre values('" + this.GetISBN() + "','" + this.GetTitre() + "','" + this.GetNombrePages() + "','" + this.GetPoids().ToString().Replace(',', '.') + "','" + this.GetPrixInitial().ToString().Replace(',', '.') + "','" + this.GetHauteur().ToString().Replace(',', '.') + "','" + this.GetLargeur().ToString().Replace(',', '.') + "','" + this.GetCommentaire() + "','" + this.GetSynopsys() + "','" + this.GetDateSortie().ToString("yyyy-MM-dd") + "','" + this.GetLeType().GetIdTypeLivre() + "');";
+            // On ajoute dans la requete d'autres requete pour ajouter aux tables intermediaire les valeurs pour lier => listes
+            foreach (Auteur a in lesAuteurs)
+            {
+                req_create += "insert into Ecrire values('" + this.GetISBN() + "','" + a.GetIdAuteur() + "');";
+            }
+            foreach (Genre g in lesGenres)
+            {
+                req_create += "insert into Definir values('" + this.GetISBN() + "','" + g.GetIdGenre() + "');";
+            }
+            foreach (Editeur e in lesEditeurs)
+            {
+                req_create += "insert into editer values('" + this.GetISBN() + "','" + e.GetIdEditeur() + "');";
+            }
+
+
+
             MySqlCommand stmt_create = new MySqlCommand(req_create, Global.conn);
             Global.conn.Open();
             stmt_create.ExecuteNonQuery();
@@ -101,69 +119,104 @@ namespace StockiFlowDesktop.Classes
 
         public void RetrieveLivre(string _ISBN)
         {
-            string req_FindAll = "Select li.ISBN as ISBN , titre , nombrePages , poids , prixInitial , hauteur , largeur , commentaire , synopsys, DateSortie , idEtat, idTypeLivre, idAuteur, idGenre, idEditeur from livre li left join Definir de on de.ISBN = li.ISBN left join Editer ed on ed.ISBN = li.ISBN left join Ecrire ec on ec.ISBN = li.ISBN where li.ISBN = " + this.GetISBN();
-            MySqlCommand stmt_FindAll = new MySqlCommand(req_FindAll, Global.conn);
+
+            // variable pour recuperer des objets externe apres la requete principale
+            List<int> liste_IDauteurs = new List<int>();
+            List<int> liste_IDediteurs = new List<int>();
+            List<int> liste_IDgenres = new List<int>();
+
+            int idType = -1;
+
+
+            string req_Retrieve = "Select li.ISBN as ISBN , titre , nombrePages , poids , prixInitial , hauteur , largeur , commentaire , synopsys, DateSortie, idTypeLivre, idAuteur, idGenre, idEditeur from livre li left join Definir de on de.ISBN = li.ISBN left join Editer ed on ed.ISBN = li.ISBN left join Ecrire ec on ec.ISBN = li.ISBN where li.ISBN = '" + _ISBN + "'";
+            MySqlCommand stmt_Retrieve = new MySqlCommand(req_Retrieve, Global.conn);
+
+
             Global.conn.Open();
-            using (MySqlDataReader reader = stmt_FindAll.ExecuteReader())
+
+
+            using (MySqlDataReader reader = stmt_Retrieve.ExecuteReader())
             {
                 while (reader.Read())
                 {
-                    // Init variable nécessaire poiur le constructeur (objet externe)
-                    Livre livre_temp = new Livre();
-
-                    Etat etat_temp = new Etat();
-                    TypeLivre type_temp = new TypeLivre();
+                    List<Auteur> liste_auteurs_temp = new List<Auteur>();
+                    List<Editeur> liste_editeurs_temp = new List<Editeur>();
+                    List<Genre> liste_genres_temp = new List<Genre>();
                     
-
-                    Auteur auteur_temp = new Auteur();
-                    Editeur editeur_temp = new Editeur();            
-                    Genre genre_temp = new Genre();
-
-                    List<Auteur> listeAuteur_temp = new List<Auteur>(); 
-                    List<Editeur> listeEditeur_temp = new List<Editeur>();   
-                    List<Genre> listeGenre_temp = new List<Genre>();
-
                     
-                    // A chaque ligne on retrieve l'auteur l'editeur et le genre et on l'ajoute à la collections d'objets
-                    auteur_temp.RetrieveAuteur(int.Parse(reader["idAuteur"].ToString()));
-                    editeur_temp.RetrieveEditeur(int.Parse(reader["idEditeur"].ToString()));
-                    genre_temp.RetrieveGenre(int.Parse(reader["idGenre"].ToString()));
+                    //Récupérations des id d'auteur/editeur et genre si elles ne sont pas deja dans la liste
+                    if (liste_IDauteurs.Contains(int.Parse(reader["idAuteur"].ToString())) == false)
+                    {
+                        liste_IDauteurs.Add(int.Parse(reader["idAuteur"].ToString()));
+                    }
+                    if (liste_IDediteurs.Contains(int.Parse(reader["idEditeur"].ToString())) == false)
+                    {
+                        liste_IDediteurs.Add(int.Parse(reader["idEditeur"].ToString()));
+                    }
+                    if (liste_IDgenres.Contains(int.Parse(reader["idGenre"].ToString())) == false)
+                    {
+                        liste_IDgenres.Add(int.Parse(reader["idGenre"].ToString()));
+                    }
 
-                    // Ajout dans les collections d'objets des objets recuperer
-                    listeAuteur_temp.Add(auteur_temp);
-                    listeEditeur_temp.Add(editeur_temp);
-                    listeGenre_temp.Add(genre_temp);
 
 
 
                     // Récupération des objets par le biais de la clé étrangère dans la table                
-                    etat_temp.RetrieveEtat(int.Parse(reader["idEtat"].ToString()));
-                    type_temp.RetrieveTypeLivre(int.Parse(reader["idTypeLivre"].ToString()));
+              
+                    idType = int.Parse(reader["idTypeLivre"].ToString());
 
 
 
-                    livre_temp.SetISBN(reader["ISBN"].ToString());
-                    livre_temp.SetTitre(reader["titre"].ToString());
-                    livre_temp.SetNombrePages(int.Parse(reader["nombrePages"].ToString()));
-                    livre_temp.SetPoids(float.Parse(reader["poids"].ToString()));
-                    livre_temp.SetPrixInitial(float.Parse(reader["prixInitial"].ToString()));
-                    livre_temp.SetHauteur(float.Parse(reader["hauteur"].ToString()));
-                    livre_temp.SetLargeur(float.Parse(reader["largeur"].ToString()));
-                    livre_temp.SetCommentaire(reader["commentaire"].ToString());
-                    livre_temp.SetSynopsys(reader["synopsys"].ToString());
-                    livre_temp.SetDateSortie(DateTime.Parse(reader["DateSortie"].ToString()));
+                    this.SetISBN(reader["ISBN"].ToString());
+                    this.SetTitre(reader["titre"].ToString());
+                    this.SetNombrePages(int.Parse(reader["nombrePages"].ToString()));
+                    this.SetPoids(float.Parse(reader["poids"].ToString()));
+                    this.SetPrixInitial(float.Parse(reader["prixInitial"].ToString()));
+                    this.SetHauteur(float.Parse(reader["hauteur"].ToString()));
+                    this.SetLargeur(float.Parse(reader["largeur"].ToString()));
+                    this.SetCommentaire(reader["commentaire"].ToString());
+                    this.SetSynopsys(reader["synopsys"].ToString());
+                    this.SetDateSortie(DateTime.Parse(reader["DateSortie"].ToString()));
+
+                    this.SetLesAuteurs(liste_auteurs_temp);
+                    this.SetLesEditeurs(liste_editeurs_temp);
+                    this.SetLesGenres(liste_genres_temp);
 
 
-
-                    livre_temp.SetEtat(etat_temp);
-                    livre_temp.SetLeType(type_temp);
-
-                    livre_temp.SetLesAuteurs(listeAuteur_temp);
-                    livre_temp.SetLesEditeurs(listeEditeur_temp);
-                    livre_temp.SetLesGenres(listeGenre_temp);
                 }
+                Global.conn.Close();
             }
-            Global.conn.Close();
+
+            // on recupère les objets externe
+            foreach (int idA in liste_IDauteurs)
+            {
+                Auteur auteur_temp = new Auteur();
+                auteur_temp.RetrieveAuteur(idA);
+                List<Auteur> listeAuteur_temp = this.GetLesAuteurs();
+                listeAuteur_temp.Add(auteur_temp);
+                this.SetLesAuteurs(listeAuteur_temp);                
+            }
+            foreach (int idE in liste_IDediteurs)
+            {
+                Editeur editeur_temp = new Editeur();
+                editeur_temp.RetrieveEditeur(idE);
+                List<Editeur> listeEditeur_temp = this.GetLesEditeurs();
+                listeEditeur_temp.Add(editeur_temp);
+                this.SetLesEditeurs(listeEditeur_temp);
+            }
+            foreach (int idG in liste_IDgenres)
+            {
+                Genre genre_temp = new Genre();
+                genre_temp.RetrieveGenre(idG);
+                List<Genre> listeGenre_temp = this.GetLesGenres();
+                listeGenre_temp.Add(genre_temp);
+                this.SetLesGenres(listeGenre_temp);
+            }
+
+
+            TypeLivre typeLivre_temp = new TypeLivre();
+            typeLivre_temp.RetrieveTypeLivre(idType);
+            this.SetLeType(typeLivre_temp);
         }
 
 
@@ -174,7 +227,7 @@ namespace StockiFlowDesktop.Classes
 
         public void UpdateLivre()
         {
-            string req_update = "update Livre set titre = @titre, NombrePages = @nombrepages,poids = @poids, prixInitial = @prixInitial , hauteur = @hauteur , largeur = @largeur, commentaire = @commentaire , Synopsis = @synopsys idEtat = @idEtat where ISBN = @ISBN";
+            string req_update = "update Livre set titre = @titre, NombrePages = @nombrepages,poids = @poids, prixInitial = @prixInitial , hauteur = @hauteur , largeur = @largeur, commentaire = @commentaire , Synopsis = @synopsys  where ISBN = @ISBN";
             MySqlCommand stmt_update = new MySqlCommand(req_update, Global.conn);
 
             stmt_update.Parameters.AddWithValue("@titre", this.GetTitre());
@@ -184,7 +237,6 @@ namespace StockiFlowDesktop.Classes
             stmt_update.Parameters.AddWithValue("@largeur", this.GetLargeur());
             stmt_update.Parameters.AddWithValue("@commentaire", this.GetCommentaire());
             stmt_update.Parameters.AddWithValue("@synopsys", this.GetSynopsys());
-            stmt_update.Parameters.AddWithValue("@idEtat", this.GetEtat().GetIdEtat());
             stmt_update.Parameters.AddWithValue("@ISBN", this.GetISBN());
 
             Global.conn.Open();
@@ -212,41 +264,54 @@ namespace StockiFlowDesktop.Classes
 
 
         // Méthode FindAllLivre qui prend en paramètre un booleen => si il est à true alors on rajoute un pattern à la requête SQL => Evite de faire une fonction dedier
-        public List<Livre> FindAllLivre(bool isRecherche , string? pattern)
+        public List<Livre> FindAllLivre(bool isRecherche, string? pattern)
         {
+
             List<Livre> CollectionLivres = new List<Livre>();
 
-            //Dictionnaire qui va enregister et vérifier si un livre à deja etait enregister => permet une meilleur organisation notamment à cause des collections d'objets
-            Dictionary<string, Livre> livresMap = new Dictionary<string, Livre>(); 
+            // Dictionnaire pour stocker les livres et leurs associations
+            Dictionary<string, Livre> livresMap = new Dictionary<string, Livre>();
 
-            string req_FindAll = "Select li.ISBN as ISBN, titre, nombrePages, poids, prixInitial, hauteur, largeur, commentaire, synopsys, DateSortie, idEtat, idTypeLivre, ec.idAuteur, de.idGenre, ed.idEditeur from livre li left join Definir de on de.ISBN = li.ISBN left join Editer ed on ed.ISBN = li.ISBN left join Ecrire ec on ec.ISBN = li.ISBN";
-            
-            //Si isRecherche est sur true alors l'utilisateur recherche un livre en particulier par titre => on rajoute un pattern à la requête
+            // Dictionnaires pour stocker les IDs d'auteurs, éditeurs, genres
+            Dictionary<string, List<int>> DicoIdAuteur = new Dictionary<string, List<int>>();
+            Dictionary<string, List<int>> DicoIdEditeur = new Dictionary<string, List<int>>();
+            Dictionary<string, List<int>> DicoIdGenre = new Dictionary<string, List<int>>();
+
+            Dictionary<string, int> DicoIdType = new Dictionary<string, int>();
+
+            string req_FindAll = "Select li.ISBN as ISBN, titre, nombrePages, poids, prixInitial, hauteur, largeur, commentaire, synopsys, DateSortie, idTypeLivre, ec.idAuteur, de.idGenre, ed.idEditeur " +
+                                 "from livre li " +
+                                 "left join Definir de on de.ISBN = li.ISBN " +
+                                 "left join Editer ed on ed.ISBN = li.ISBN " +
+                                 "left join Ecrire ec on ec.ISBN = li.ISBN";
+
+            // Ajoute une condition de recherche si nécessaire
             if (isRecherche)
             {
-                req_FindAll += "  where titre like '%" + pattern + "%';";
+                req_FindAll += " where titre like '%" + pattern + "%';";
             }
-            
+
             MySqlCommand stmt_FindAll = new MySqlCommand(req_FindAll, Global.conn);
             Global.conn.Open();
-
 
             using (MySqlDataReader reader = stmt_FindAll.ExecuteReader())
             {
                 while (reader.Read())
                 {
-
                     string currentISBN = reader["ISBN"].ToString();
                     Livre livre_temp;
 
-                    // Si le livre n'a pas encore été ajouté, on le crée
-                    if (!livresMap.ContainsKey(currentISBN))
+
+                    // Si le livre est deja present dans le dictionnaire
+                    if (livresMap.ContainsKey(currentISBN) == false)
                     {
+                        //Liste vide pour les auteurs, editeurs, genres
+                        List<Auteur> lesAuteurs = new List<Auteur>();
+                        List<Editeur> lesEditeurs = new List<Editeur>();
+                        List<Genre> lesGenres = new List<Genre>();
+
+
                         livre_temp = new Livre();
-
-                        Etat etat_temp = new Etat();
-                        TypeLivre type_temp = new TypeLivre();
-
                         livre_temp.SetISBN(currentISBN);
                         livre_temp.SetTitre(reader["titre"].ToString());
                         livre_temp.SetNombrePages(int.Parse(reader["nombrePages"].ToString()));
@@ -258,54 +323,111 @@ namespace StockiFlowDesktop.Classes
                         livre_temp.SetSynopsys(reader["synopsys"].ToString());
                         livre_temp.SetDateSortie(DateTime.Parse(reader["DateSortie"].ToString()));
 
-                        etat_temp.RetrieveEtat(int.Parse(reader["idEtat"].ToString()));
-                        type_temp.RetrieveTypeLivre(int.Parse(reader["idTypeLivre"].ToString()));
+                        livre_temp.SetLesAuteurs(lesAuteurs);
+                        livre_temp.SetLesEditeurs(lesEditeurs);
+                        livre_temp.SetLesGenres(lesGenres);
 
-                        livre_temp.SetEtat(etat_temp);
-                        livre_temp.SetLeType(type_temp);
 
-                        // Initialise les listes d'auteurs, éditeurs et genres
-                        livre_temp.SetLesAuteurs(new List<Auteur>());
-                        livre_temp.SetLesGenres(new List<Genre>());
-                        livre_temp.SetLesEditeurs(new List<Editeur>());
-
-                        // Ajoute le livre à la collection temporaire
                         livresMap.Add(currentISBN, livre_temp);
                     }
 
-                    // Si le livre existe déjà, on le récupère
+
+
+
+
+                    // PARTIE ID AUTEUR EDITEUR ET GENRE
+
+                    // Si aucun auteur/editeur/genre n'a jamais ete mis pour l'isbn actuel alors on créer une liste qui va ajouter avoir les id sinon elle existe deja donc on rajoute les id de la boucle
+                    if (DicoIdAuteur.ContainsKey(currentISBN) == false)
+                    {
+                        DicoIdAuteur[currentISBN] = new List<int>();
+                    }
                     else
                     {
-                        livre_temp = livresMap[currentISBN];
+                        DicoIdAuteur[currentISBN].Add(int.Parse(reader["idAuteur"].ToString()));
+                    }
+
+                    if (DicoIdEditeur.ContainsKey(currentISBN) == false)
+                    {
+                        DicoIdEditeur[currentISBN] = new List<int>();
+                    }
+                    else
+                    {
+                        DicoIdEditeur[currentISBN].Add(int.Parse(reader["idEditeur"].ToString()));
+                    }
+
+                    if (DicoIdGenre.ContainsKey(currentISBN) == false)
+                    {
+                        DicoIdGenre[currentISBN] = new List<int>();
+                    }
+                    else
+                    {
+                        DicoIdGenre[currentISBN].Add(int.Parse(reader["idGenre"].ToString()));
                     }
 
 
-                    // Dans tout les cas, on ajoute les auteurs, éditeurs, genres s'ils ne sont pas déjà dans la liste
-                    Auteur auteur_temp = new Auteur();
-                    auteur_temp.RetrieveAuteur(int.Parse(reader["idAuteur"].ToString()));
-                    livre_temp.GetLesAuteurs().Add(auteur_temp);
+                    //On fais la même chose pour le type du livre
                     
-                
+                    if (DicoIdType.ContainsKey(currentISBN) == false)
+                    {
+                        DicoIdType[currentISBN] = int.Parse(reader["idTypeLivre"].ToString());
+                    }
 
-                    Editeur editeur_temp = new Editeur();
-                    editeur_temp.RetrieveEditeur(int.Parse(reader["idEditeur"].ToString()));
-                    livre_temp.GetLesEditeurs().Add(editeur_temp);
-                    
-                
-                
-                    Genre genre_temp = new Genre();
-                    genre_temp.RetrieveGenre(int.Parse(reader["idGenre"].ToString()));
-                    livre_temp.GetLesGenres().Add(genre_temp);
-                    
-                
                 }
             }
+
             Global.conn.Close();
 
-            // Ajout des livres de la map à la collection finale
+
+            // Maintenant que nous avons collecté tous les IDs, récupérons les objets associés
+            foreach (string isbn in livresMap.Keys)
+            {
+                Livre livre = livresMap[isbn];
+
+                // Récupère les auteurs
+                foreach (int auteurId in DicoIdAuteur[isbn])
+                {
+                    Auteur auteur_temp = new Auteur();
+                    auteur_temp.RetrieveAuteur(auteurId);
+                    List<Auteur> listeAuteur_temp = livre.GetLesAuteurs();
+                    listeAuteur_temp.Add(auteur_temp);
+                    livre.SetLesAuteurs(listeAuteur_temp);
+                }
+
+                // Récupère les éditeurs
+                foreach (var editeurId in DicoIdEditeur[isbn])
+                {
+                    Editeur editeur_temp = new Editeur();
+                    editeur_temp.RetrieveEditeur(editeurId);
+                    List<Editeur> listeEditeur_temp = livre.GetLesEditeurs();
+                    listeEditeur_temp.Add(editeur_temp);
+                    livre.SetLesEditeurs(listeEditeur_temp);
+                }
+
+                // Récupère les genres
+                foreach (var genreId in DicoIdGenre[isbn])
+                {
+                    Genre genre_temp = new Genre();
+                    genre_temp.RetrieveGenre(genreId);
+                    List<Genre> listeGenre_temp = livre.GetLesGenres();
+                    listeGenre_temp.Add(genre_temp);
+                    livre.SetLesGenres(listeGenre_temp);
+                }
+
+                // En se basant sur l'id sauvegarder dans l'objet livre on retrieve l'objet typeLivre
+
+                TypeLivre type_temp = new TypeLivre();
+
+
+                type_temp.RetrieveTypeLivre(DicoIdType[isbn]);
+                livre.SetLeType(type_temp);
+            }
+
+            // Ajoute les livres de la map à la collection finale
             CollectionLivres.AddRange(livresMap.Values);
 
             return CollectionLivres;
-        }    
+        }
+
     }
 }

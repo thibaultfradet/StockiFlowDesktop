@@ -1614,11 +1614,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop.csproj",
+      "projectUniqueName": "D:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop.csproj",
       "projectName": "StockiFlowDesktop",
-      "projectPath": "D:\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop.csproj",
+      "projectPath": "D:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop.csproj",
       "packagesPath": "C:\\Users\\t.fradet\\.nuget\\packages\\",
-      "outputPath": "D:\\StockiFlowDesktop\\StockiFlowDesktop\\obj\\",
+      "outputPath": "D:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

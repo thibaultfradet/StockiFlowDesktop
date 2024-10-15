@@ -36,6 +36,11 @@ namespace StockiFlowDesktop
             B_rechercher = new Button();
             MenuStrip = new MenuStrip();
             ajouterToolStripMenuItem = new ToolStripMenuItem();
+            livreToolStripMenuItem = new ToolStripMenuItem();
+            typeLivreToolStripMenuItem = new ToolStripMenuItem();
+            genreToolStripMenuItem = new ToolStripMenuItem();
+            auteurToolStripMenuItem = new ToolStripMenuItem();
+            editeurToolStripMenuItem = new ToolStripMenuItem();
             GB_Filtre = new GroupBox();
             DGV_stock = new DataGridView();
             MenuStrip.SuspendLayout();
@@ -54,7 +59,7 @@ namespace StockiFlowDesktop
             // 
             B_rechercher.Location = new Point(206, 20);
             B_rechercher.Name = "B_rechercher";
-            B_rechercher.Size = new Size(123, 30);
+            B_rechercher.Size = new Size(130, 30);
             B_rechercher.TabIndex = 1;
             B_rechercher.Text = "Rechercher par titre";
             B_rechercher.UseVisualStyleBackColor = true;
@@ -66,14 +71,50 @@ namespace StockiFlowDesktop
             MenuStrip.Items.AddRange(new ToolStripItem[] { ajouterToolStripMenuItem });
             MenuStrip.Location = new Point(0, 0);
             MenuStrip.Name = "MenuStrip";
-            MenuStrip.Size = new Size(1684, 24);
+            MenuStrip.Size = new Size(1924, 24);
             MenuStrip.TabIndex = 2;
             // 
             // ajouterToolStripMenuItem
             // 
+            ajouterToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { livreToolStripMenuItem, typeLivreToolStripMenuItem, genreToolStripMenuItem, auteurToolStripMenuItem, editeurToolStripMenuItem });
             ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
             ajouterToolStripMenuItem.Size = new Size(58, 20);
             ajouterToolStripMenuItem.Text = "Ajouter";
+            // 
+            // livreToolStripMenuItem
+            // 
+            livreToolStripMenuItem.Name = "livreToolStripMenuItem";
+            livreToolStripMenuItem.Size = new Size(180, 22);
+            livreToolStripMenuItem.Text = "Livre";
+            livreToolStripMenuItem.Click += livreToolStripMenuItem_Click;
+            // 
+            // typeLivreToolStripMenuItem
+            // 
+            typeLivreToolStripMenuItem.Name = "typeLivreToolStripMenuItem";
+            typeLivreToolStripMenuItem.Size = new Size(180, 22);
+            typeLivreToolStripMenuItem.Text = "TypeLivre";
+            typeLivreToolStripMenuItem.Click += typeLivreToolStripMenuItem_Click;
+            // 
+            // genreToolStripMenuItem
+            // 
+            genreToolStripMenuItem.Name = "genreToolStripMenuItem";
+            genreToolStripMenuItem.Size = new Size(180, 22);
+            genreToolStripMenuItem.Text = "Genre";
+            genreToolStripMenuItem.Click += genreToolStripMenuItem_Click;
+            // 
+            // auteurToolStripMenuItem
+            // 
+            auteurToolStripMenuItem.Name = "auteurToolStripMenuItem";
+            auteurToolStripMenuItem.Size = new Size(180, 22);
+            auteurToolStripMenuItem.Text = "Auteur";
+            auteurToolStripMenuItem.Click += auteurToolStripMenuItem_Click;
+            // 
+            // editeurToolStripMenuItem
+            // 
+            editeurToolStripMenuItem.Name = "editeurToolStripMenuItem";
+            editeurToolStripMenuItem.Size = new Size(180, 22);
+            editeurToolStripMenuItem.Text = "Editeur";
+            editeurToolStripMenuItem.Click += editeurToolStripMenuItem_Click;
             // 
             // GB_Filtre
             // 
@@ -96,15 +137,13 @@ namespace StockiFlowDesktop
             DGV_stock.RowHeadersWidth = 51;
             DGV_stock.Size = new Size(1798, 785);
             DGV_stock.TabIndex = 3;
-            DGV_stock.CellBeginEdit += DGV_stock_CellBeginEdit;
-            DGV_stock.CellClick += DGV_stock_CellClick;
-            DGV_stock.CellEndEdit += DGV_stock_CellEndEdit;
+            DGV_stock.CellDoubleClick += DGV_stock_CellDoubleClick;
             // 
             // F_Acceuil
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1684, 791);
+            ClientSize = new Size(1924, 824);
             Controls.Add(GB_Filtre);
             Controls.Add(DGV_stock);
             Controls.Add(MenuStrip);
@@ -129,5 +168,10 @@ namespace StockiFlowDesktop
         private ToolStripMenuItem ajouterToolStripMenuItem;
         private GroupBox GB_Filtre;
         private DataGridView DGV_stock;
+        private ToolStripMenuItem livreToolStripMenuItem;
+        private ToolStripMenuItem typeLivreToolStripMenuItem;
+        private ToolStripMenuItem genreToolStripMenuItem;
+        private ToolStripMenuItem auteurToolStripMenuItem;
+        private ToolStripMenuItem editeurToolStripMenuItem;
     }
 }

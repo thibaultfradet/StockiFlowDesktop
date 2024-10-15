@@ -51,11 +51,12 @@ namespace StockiFlowDesktop.Classes
                 try
                 {
                     reader.Read();
-                    this.SetIdGenre(int.Parse(reader["MAX(id_editeur)"].ToString()) + 1);
+                    this.SetIdGenre(int.Parse(reader["max(idGenre)"].ToString()) + 1);
                 }
                 catch (Exception) { }
             }
             Global.conn.Close();
+
 
 
 
