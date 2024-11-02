@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|e:\\stockiflow total\\stockiflowmax\\stockiflowdesktop\\stockiflowdesktop\\stockiflowdesktop\\classes\\livre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|solutionrelative:stockiflowdesktop\\classes\\livre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|e:\\stockiflow total\\stockiflowmax\\stockiflowdesktop\\stockiflowdesktop\\stockiflowdesktop\\f_acceuil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|solutionrelative:stockiflowdesktop\\f_acceuil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|e:\\stockiflow total\\stockiflowmax\\stockiflowdesktop\\stockiflowdesktop\\stockiflowdesktop\\f_acceuil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|solutionrelative:stockiflowdesktop\\f_acceuil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|e:\\stockiflow total\\stockiflowmax\\stockiflowdesktop\\stockiflowdesktop\\stockiflowdesktop\\pages\\f_historisationstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|solutionrelative:stockiflowdesktop\\pages\\f_historisationstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|e:\\stockiflow total\\stockiflowmax\\stockiflowdesktop\\stockiflowdesktop\\stockiflowdesktop\\classes\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|solutionrelative:stockiflowdesktop\\classes\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|e:\\stockiflow total\\stockiflowmax\\stockiflowdesktop\\stockiflowdesktop\\stockiflowdesktop\\pages\\f_historisationstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|solutionrelative:stockiflowdesktop\\pages\\f_historisationstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|e:\\stockiflow total\\stockiflowmax\\stockiflowdesktop\\stockiflowdesktop\\stockiflowdesktop\\pages\\f_modifstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|solutionrelative:stockiflowdesktop\\pages\\f_modifstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\stockiflowdesktop\\pages\\f_modifstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|solutionrelative:stockiflowdesktop\\pages\\f_modifstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|e:\\stockiflow total\\stockiflowmax\\stockiflowdesktop\\stockiflowdesktop\\stockiflowdesktop\\pages\\f_ajoutauteur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|solutionrelative:stockiflowdesktop\\pages\\f_ajoutauteur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\stockiflowdesktop\\pages\\f_ajoutauteur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C4AC8B9D-47E6-4D14-BD9E-609B2ED0CA66}|StockiFlowDesktop\\StockiFlowDesktop.csproj|solutionrelative:stockiflowdesktop\\pages\\f_ajoutauteur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Livre.cs",
+              "DocumentMoniker": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\Classes\\Livre.cs",
+              "RelativeDocumentMoniker": "StockiFlowDesktop\\Classes\\Livre.cs",
+              "ToolTip": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\Classes\\Livre.cs",
+              "RelativeToolTip": "StockiFlowDesktop\\Classes\\Livre.cs",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAqwEMBAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T20:43:01.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "F_Acceuil.cs",
+              "DocumentMoniker": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\F_Acceuil.cs",
+              "RelativeDocumentMoniker": "StockiFlowDesktop\\F_Acceuil.cs",
+              "ToolTip": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\F_Acceuil.cs",
+              "RelativeToolTip": "StockiFlowDesktop\\F_Acceuil.cs",
+              "ViewState": "AQIAAKkAAAAAAAAAAAAAAKoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T20:39:41.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "F_Acceuil.cs [Conception]",
+              "DocumentMoniker": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\F_Acceuil.cs",
+              "RelativeDocumentMoniker": "StockiFlowDesktop\\F_Acceuil.cs",
+              "ToolTip": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\F_Acceuil.cs [Conception]",
+              "RelativeToolTip": "StockiFlowDesktop\\F_Acceuil.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T20:39:37.764Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "F_HistorisationStock.cs",
+              "DocumentMoniker": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\Pages\\F_HistorisationStock.cs",
+              "RelativeDocumentMoniker": "StockiFlowDesktop\\Pages\\F_HistorisationStock.cs",
+              "ToolTip": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\Pages\\F_HistorisationStock.cs",
+              "RelativeToolTip": "StockiFlowDesktop\\Pages\\F_HistorisationStock.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwCwAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T20:31:40.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Stock.cs",
+              "DocumentMoniker": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\Classes\\Stock.cs",
+              "RelativeDocumentMoniker": "StockiFlowDesktop\\Classes\\Stock.cs",
+              "ToolTip": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\Classes\\Stock.cs",
+              "RelativeToolTip": "StockiFlowDesktop\\Classes\\Stock.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHgAAAABAQAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T19:47:49.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "F_HistorisationStock.cs [Conception]",
+              "DocumentMoniker": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\Pages\\F_HistorisationStock.cs",
+              "RelativeDocumentMoniker": "StockiFlowDesktop\\Pages\\F_HistorisationStock.cs",
+              "ToolTip": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\Pages\\F_HistorisationStock.cs [Conception]",
+              "RelativeToolTip": "StockiFlowDesktop\\Pages\\F_HistorisationStock.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T16:03:02.728Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "F_ModifStock.cs",
+              "DocumentMoniker": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\Pages\\F_ModifStock.cs",
+              "RelativeDocumentMoniker": "StockiFlowDesktop\\Pages\\F_ModifStock.cs",
+              "ToolTip": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\Pages\\F_ModifStock.cs",
+              "RelativeToolTip": "StockiFlowDesktop\\Pages\\F_ModifStock.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAYwHIAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T16:02:02.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "F_ModifStock.cs [Conception]",
+              "DocumentMoniker": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\Pages\\F_ModifStock.cs",
+              "RelativeDocumentMoniker": "StockiFlowDesktop\\Pages\\F_ModifStock.cs",
+              "ToolTip": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\Pages\\F_ModifStock.cs [Conception]",
+              "RelativeToolTip": "StockiFlowDesktop\\Pages\\F_ModifStock.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T16:01:58.925Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "F_AjoutAuteur.cs",
+              "DocumentMoniker": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\Pages\\F_AjoutAuteur.cs",
+              "RelativeDocumentMoniker": "StockiFlowDesktop\\Pages\\F_AjoutAuteur.cs",
+              "ToolTip": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\Pages\\F_AjoutAuteur.cs",
+              "RelativeToolTip": "StockiFlowDesktop\\Pages\\F_AjoutAuteur.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T16:01:39.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "F_AjoutAuteur.cs [Conception]",
+              "DocumentMoniker": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\Pages\\F_AjoutAuteur.cs",
+              "RelativeDocumentMoniker": "StockiFlowDesktop\\Pages\\F_AjoutAuteur.cs",
+              "ToolTip": "E:\\stockiflow total\\stockiFlowMax\\StockiFlowDesktop\\StockiFlowDesktop\\StockiFlowDesktop\\Pages\\F_AjoutAuteur.cs [Conception]",
+              "RelativeToolTip": "StockiFlowDesktop\\Pages\\F_AjoutAuteur.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T16:01:37.4Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
