@@ -208,3 +208,40 @@ E:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlow
 E:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\ref\StockiFlowDesktop.dll
 E:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.Pages.F_ModifStock.resources
 E:\stockiflow total\stockiFlowMax\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.Pages.F_HistorisationStock.resources
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.exe
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.deps.json
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.runtimeconfig.json
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.dll
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\StockiFlowDesktop.pdb
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.csproj.AssemblyReference.cache
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.F_Acceuil.resources
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.Pages.F_AjoutAuteur.resources
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.Pages.F_AjoutLivre.resources
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.Pages.F_AjoutMulti.resources
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.Pages.F_HistorisationStock.resources
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.Pages.F_ModifStock.resources
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.csproj.GenerateResource.cache
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.AssemblyInfoInputs.cache
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.AssemblyInfo.cs
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.csproj.CoreCompileInputs.cache
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.sourcelink.json
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFl.3A97DC61.Up2Date
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.dll
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\refint\StockiFlowDesktop.dll
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.pdb
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\StockiFlowDesktop.genruntimeconfig.cache
+C:\Users\t.fradet\Documents\GitHub\StockiFlowDesktop\StockiFlowDesktop\StockiFlowDesktop\obj\Debug\net8.0-windows\ref\StockiFlowDesktop.dll

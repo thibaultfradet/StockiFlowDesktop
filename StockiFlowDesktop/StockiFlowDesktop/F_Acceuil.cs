@@ -75,7 +75,7 @@ namespace StockiFlowDesktop
          Paramètre : pattern : Si l'utilisateur est bien dans le cas d'une recherche alors il s'agit du pattern de recherche*/
         private void refreshGrid(string? pattern)
         {
-
+            DGV_stock.Rows.Clear();
 
             // On initialise la grid et on y rajoute les obj avec findAll
             Livre livre_findAll = new Livre();
