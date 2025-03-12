@@ -118,7 +118,7 @@ namespace StockiFlowDesktop
                 livre_dgv.GetLargeur(),
                 livre_dgv.GetCommentaire(),
                 livre_dgv.GetSynopsys(),
-                livre_dgv.GetDateSortie(),
+                livre_dgv.GetDateSortie().ToString("dd/MM/yyyy"),
                 livre_dgv.GetLeType().GetLibelle(),
                 AuteurConcat,
                 EditeurConcat,

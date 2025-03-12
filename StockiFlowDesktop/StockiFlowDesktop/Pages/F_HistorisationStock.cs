@@ -42,7 +42,7 @@ namespace StockiFlowDesktop.Pages
                     stock.getISBN(),
                     stock.getQuantite().ToString(),
                     stock.getRaisonStock(),
-                    stock.getDateStock().ToString("yyyy-MM-dd")
+                    stock.getDateStock().ToString("dd/MM/yyyy")
                 );
 
                 // Récupérer la ligne nouvellement ajoutée

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StockiFlowDesktop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ca2ab54db3901a63796ba732b321102f09a30b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbfc609f0c87e260aa7c1295ebcb0a37fda17d2f")]
 [assembly: System.Reflection.AssemblyProductAttribute("StockiFlowDesktop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StockiFlowDesktop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
